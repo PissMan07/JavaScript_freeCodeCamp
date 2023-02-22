@@ -32,12 +32,12 @@ h--; //will result in 20 (subs one)
 let remainder = 5%3; // will return 2 because when 5 is divided by 3 the will be two left over
 
 //Strings
-const DQyotes = "This \"baka\" is kind of a sussy \"baka\"." // will return: "This "baka" is kind of a sussy "baka"."
-const SQuotes = 'This "baka" is kind of a sussy "baka".' //ideal string method 'This "baka" is kind of a sussy "baka".'
-const Concat = 'I come first. ' + 'I come second.' // will return 'I come first. I come second.'
+const DQyotes = "This \"baka\" is kind of a sussy \"baka\"."; // will return: "This "baka" is kind of a sussy "baka"."
+const SQuotes = 'This "baka" is kind of a sussy "baka".'; //ideal string method 'This "baka" is kind of a sussy "baka".'
+const Concat = 'I come first. ' + 'I come second.'; // will return 'I come first. I come second.'
 
-const MyName = "Ethan"
-const Len = MyName.length //with return number of characters taken (includes spaces) which is 5
-const FirstLetter = MyName[0] //everything starts with zero, and you get get index of strings
-const LastLetter = MyName[Len-1] //length does not include zero so you need to subtract 1
+const MyName = "Ethan";
+const Len = MyName.length; //with return number of characters taken (includes spaces) which is 5
+const FirstLetter = MyName[0]; //everything starts with zero, and you get get index of strings
+const LastLetter = MyName[Len-1]; //length does not include zero so you need to subtract 1
 //CANNOT CHANGE INDIVIDUAL LETTERS WITH BRACKET NOTATION
