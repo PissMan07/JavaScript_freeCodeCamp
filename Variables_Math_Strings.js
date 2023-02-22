@@ -40,4 +40,4 @@ const MyName = "Ethan"
 const Len = MyName.length //with return number of characters taken (includes spaces) which is 5
 const FirstLetter = MyName[0] //everything starts with zero, and you get get index of strings
 const LastLetter = MyName[Len-1] //length does not include zero so you need to subtract 1
-//CANNOT CHANGE INDIVIDUAL LETTERS WITH BRACKETS
+//CANNOT CHANGE INDIVIDUAL LETTERS WITH BRACKET NOTATION
