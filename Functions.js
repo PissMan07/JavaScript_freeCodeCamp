@@ -22,6 +22,6 @@ const B = 2; //Global Variable
 function d(){
     C = 1; //this will create new global
     let A = 3; //Local Variables only avaiable in function (can share same name as global)
-    return (A + B + C)
+    return (A + B + C); //you can preform actions while returning value
 }
-d() //will return 3+2+1 or 6
+d(); //will return 3+2+1 or 6
