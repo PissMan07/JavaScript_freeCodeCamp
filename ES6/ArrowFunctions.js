@@ -9,4 +9,4 @@ const ArrFunc = (a,b,c) => 'Hello World'
 const A = (a,b) => a+b
 A(10,10) // will return 20
 
-cons
+const B = (...args) => args.reduce((a, b) => a + b, 0) //...args allows for varying number of parameters
