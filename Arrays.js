@@ -16,6 +16,11 @@ C.push([4,"Gays"]); //will add parameter at end of the array (aka [4, "gays"])
 C.pop(); // will remove last item of array (aka [4, "gays"])
 C.shift(); // will remove first item of array (aka 1)
 C.unshift(1); //will parameter to front of array (aka 1)
+
+//splice( index , how_many_values_to_delete , values_to_insert...)
+C.splice(3,0,4); //will add 4 to the third index
+C.splice(0,1) //will remove index zero
+
 //C will equal [1,2,3] at the end of everything
 const D = [4,5,6];
 
