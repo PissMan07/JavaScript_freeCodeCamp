@@ -39,3 +39,20 @@ const stats = {
 };
 
 const half = ({max,min}) =>(max + min) / 2.0; //passes on max and min from obj
+
+//returning objects from arrow functions
+const SHORTgetMousePosition = (x, y) => ({ x, y }); //will return parameters x and y as an object
+
+//this is the long version
+const LONGgetMousePosition = (x, y) => ({ x: x, y: y });
+
+//Functions in objects
+const bicycle = {
+  gear: 2,
+  setGear(newGear) { //function,
+    this.gear = newGear; //this will get the outside scope, think of it as getting the parent of the function
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
