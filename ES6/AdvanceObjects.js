@@ -27,3 +27,5 @@ const C1 = {
 };
 
 const {yesterday:{low:yl,high:yh}} = C1
+
+//Passing destructuring through functions as parameters
