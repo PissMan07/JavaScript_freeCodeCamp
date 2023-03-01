@@ -19,7 +19,8 @@ const makeServerRequest = new Promise((resolve, reject) => {
 
 //Utilizing Promisies
 //You have to use "[promise].then"; only calls if resolved
-makeServerRequest.then((result)=>console.log(result)) //will return success
+makeServerRequest.then((result)=>console.log(result)) //will return 'success'
 
 //Handling Rejections
-//You have to use [promise].catch; on
+//You have to use [promise].catch; only calls if rejected
+makeServerRequest.catch((error) => console.log(error)) //will return 'failed'
