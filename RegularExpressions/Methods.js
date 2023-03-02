@@ -17,11 +17,6 @@ const b2Regex = /Hello/ig //you can have multiple filters on one regex (g is the
 a1.match(b1Regex) //will return the regex if present, ['Hello']
 a1.match(b2Regex) //will return the regex if present, ['Hello, HeLlO']
 
-//Wild Card
-const c1Regex = /.ello/ //'.' is a wild card meaning if 'ello' is in the word then it will recognize
-const c2Regex = /./ //This will return everything
-c1Regex.test(a1) //will return true because 'ello' is present
-
 //Matching Singles with multiple possibilities
 const d1Regex = /[aeiou]/gi; // Find all vowels (single characters)
 const e1Regex = /he/gi; // will return all words that begin with 'he'
