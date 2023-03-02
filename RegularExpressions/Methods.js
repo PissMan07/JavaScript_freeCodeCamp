@@ -19,20 +19,19 @@ a1.match(b2Regex) //will return the regex if present, ['Hello, HeLlO']
 
 //Wild Card
 const c1Regex = /.ello/ //'.' is a wild card meaning if 'ello' is in the word then it will recognize
+const c2Regex = /./ //This will return everything
 c1Regex.test(a1) //will return true because 'ello' is present
 
 //Matching Singles with multiple possibilities
-let d1Regex = /[aeiou]/gi; // Find all vowels (single characters)
-let e1Regex = /[a-z0-9]/gi; // Find all letters and all numberes
-let f1Regex = /l+/gi; // will combine the letters that appear in a row like this hello->['ll']
-let g1Regex = /he/gi; // will return all words that begin with 'he'
-let result = a1.match(d1Regex); // return vowels [e,o,o,e,o,e,a]
+const d1Regex = /[aeiou]/gi; // Find all vowels (single characters)
+const e1Regex = /he/gi; // will return all words that begin with 'he'
+const result = a1.match(d1Regex); // return vowels [e,o,o,e,o,e,a]
 
-let bigStr = "big";
-let bagStr = "bag";
-let bugStr = "bug";
-let bogStr = "bog";
-let bgRegex = /b[aiu]g/;
+const bigStr = "big";
+const bagStr = "bag";
+const bugStr = "bug";
+const bogStr = "bog";
+const bgRegex = /b[aiu]g/;
 bigStr.match(bgRegex); //returns big
 bagStr.match(bgRegex); //returns bag
 bugStr.match(bgRegex); //returns bug
