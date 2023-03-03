@@ -10,6 +10,7 @@ const a2Regex = /dog|cat|rat/; //the '|' symbolizes or
 const a3Regex = /HeLlO/i; //by adding 'i' at the end you can ignore all case differences
 
 const a1Result = a1Regex.test(a1); //will return true if /Hello/ is found
+
 //Match; get values
 const b1Regex = /Hello/
 const b2Regex = /Hello/ig //you can have multiple filters on one regex (g is the include repeats filter)
@@ -31,3 +32,7 @@ bigStr.match(bgRegex); //returns big
 bagStr.match(bgRegex); //returns bag
 bugStr.match(bgRegex); //returns bug
 bogStr.match(bgRegex); //returns undfined
+
+//Basicaly An If Statement
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6} no/i; // if h repeats at min 3 and max 6 times then return entire statement
