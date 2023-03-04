@@ -35,4 +35,5 @@ bogStr.match(bgRegex); //returns undfined
 
 //Basicaly An If Statement
 let ohStr = "Ohhh no";
-let ohRegex = /oh{3,6} no/i; // if h repeats at min 3 and max 6 times then return entire statement
+let oh1Regex = /oh{3,6} no/i; // if h repeats at min 3 and max 6 times then return entire statement
+let oh2Regex = /oh{3} no/i; // if h repeats at min 3 return entire statement
