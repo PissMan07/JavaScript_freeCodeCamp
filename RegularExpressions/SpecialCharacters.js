@@ -23,7 +23,7 @@ const i1Regex = /el*/gi // '*' makes says return all duplicates or none if not p
 const j1Regex = /.*/gi //will return entire text as one index value
 
 //Question Mark: Stop at the next instance; or can function as the same as the astirck where it can appear zero or one time [0-1]
-//Lazy match '*?'
+//Lazy match '?>'
 const text = "<h1>Winter is coming</h1>";
 const myRegex = /<.*?>/ig; // reads start at <, add everything, end at next>, //Lazy match
 
