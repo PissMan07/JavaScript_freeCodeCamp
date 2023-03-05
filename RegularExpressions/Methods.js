@@ -52,4 +52,19 @@ let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
 //(([A-Z]\.?|[A-Z][a-z]+) )? ?: makes it optioonal; [A-Z]: allows First initial and \.? allows for '.'; [A-Z][a-z]+ allows for full middle name; space outside () makes sure it is seperate from last
 //Roosevelt Makes checks for Roosevelt
 
-//Capture Groups
+//calling Capture Groups: basically a regex variable you can recall parantheses
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/; //The first value has to be a number, next a space, next the same num, next a space, and finally ends with the same number
+
+//Replace
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // check word 1 check for space check for word 2 check for space check for word 3
+let replaceText = "$3 $2 $1"; // swap order from 'one two three' to 'three two one'
+let replaceResult = str.replace(fixRegex, replaceText);
+
+//remove white space at begining and end
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+//^\s+: remove white any element in \s at the begining
+//|: find all spaces in the begining or end, you cant have both ^ and $ in the same phrase
+//\s+$: remove white any element in \s at the end, the g at the end repeats the so all spaces at the end gets removed
