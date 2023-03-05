@@ -49,5 +49,7 @@ let myString2 = "Franklin Roosevelt";
 let myString3 = "Franklin D. Roosevelt";
 let myRegex = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
 //((Franklin|Eleanor) check if first name is Franklin or Eleanor
-//(([A-Z]\.?|[A-Z][a-z]+) )>Roosevelt? ?: makes it optioonal; [A-Z]: allows First initial and \.? allows for '.'; [A-Z][a-z]+ allows for full middle name; space outside () makes sure it is seperate from last
-//Roosevelt Makes checks for Roosevelt and allows it to not be present
+//(([A-Z]\.?|[A-Z][a-z]+) )? ?: makes it optioonal; [A-Z]: allows First initial and \.? allows for '.'; [A-Z][a-z]+ allows for full middle name; space outside () makes sure it is seperate from last
+//Roosevelt Makes checks for Roosevelt
+
+//Capture Groups
