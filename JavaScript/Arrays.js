@@ -32,3 +32,8 @@ const C2 = [...C,4,5,6] //will equal [1,2,3,4,5,6]
 //Index Of
 const D =[1,2,3,4,5,6]
 D.indexOf(5) // will return the index of value 5 (4)
+
+function quickCheck(arr, elem) { //will check if element is in list
+    return arr.indexOf(elem) >= 0? true:false //return true if found and false if not, indexes cant be negative
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
