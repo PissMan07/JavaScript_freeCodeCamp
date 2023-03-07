@@ -18,13 +18,14 @@ const h2Regex = /^Hello/; //Hello must be the first word inorder for it to work
 //Dollar sign: Find if at end
 const k1Regex = /World$/ //will return if world is at the end
 
-//AstricK: combine instant repeaters (can occur zero times before returning)
+//AstricK: combine instant repeaters (can occur zero times before returning) [0-infinity]
 const i1Regex = /el*/gi // '*' makes says return all duplicates or none if not present
 const j1Regex = /.*/gi //will return entire text as one index value
 
-//Question Mark: Stop at the next instance
+//Question Mark: Stop at the next instance; or can function as the same as the astirck where it can appear zero or one time [0-1]
+//Lazy match '?>'
 const text = "<h1>Winter is coming</h1>";
-const myRegex = /<.*?>/ig; // reads start at <, add everything, end at next>, 
+const myRegex = /<.*?>/ig; // reads start at <, add everything, end at next>, //Lazy match
 
 a1.match(i1Regex) //In hello world: it will return ell, because it must start with e and follow with l else it will only return e
 
