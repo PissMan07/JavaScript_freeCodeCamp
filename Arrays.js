@@ -21,6 +21,14 @@ C.unshift(1); //will parameter to front of array (aka 1)
 C.splice(3,0,4); //will add 4 to the third index
 C.splice(0,1) //will remove index zero
 
+//slice(start index,end index+1): extracts/copies, end index is not inclusive
+C.splice(0,3) //will return [1,2,3]
 //C will equal [1,2,3] at the end of everything
-const D = [4,5,6];
 
+//... copy everything into array
+const C1 = [...C] //will equal [1,2,3]
+const C2 = [...C,4,5,6] //will equal [1,2,3,4,5,6]
+
+//Index Of
+const D =[1,2,3,4,5,6]
+D.indexOf(5) // will return the index of value 5 (4)
