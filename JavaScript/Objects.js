@@ -17,5 +17,5 @@ const check = family.hasOwnProperty('cuzzo') //will return false because cuzzo i
 
 //Editing Objects
 family['random string'] = 'not cool' //will change value
-family.loser = 'miley' //will create a new index and value
+family.loser = 'miley' //will create a new index and value; for bracket notation to create a new entry name must be a string
 delete family.loser // will delete index and value
