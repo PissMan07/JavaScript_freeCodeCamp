@@ -11,6 +11,15 @@ function filteredArray(arr, elem) { //make new array that excludes said element 
 console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18)); //will return [[10,8,3],[14,6,23]]
 
 
+//Find 
+function checkInventory(scannedItem) {
+  // Only change code below this line
+  return foods[scannedItem]
+  // Only change code above this line
+}
+console.log(checkInventory("apples"));
+
+
 //Check If name is in object; 'Alan','Jeff','Sarah', and 'Ryan'
 function isEveryoneHere(userObj) { //ALL elements in every must match in order for it pass true
   return ['Alan','Jeff','Sarah','Ryan'].every((name) => //[array].every will loop through every element and apply function
@@ -37,3 +46,5 @@ function countOnline(usersObj) { //will return number of people online
   }
   return n
 }
+
+
