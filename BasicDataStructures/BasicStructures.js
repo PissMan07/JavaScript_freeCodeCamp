@@ -48,3 +48,14 @@ function countOnline(usersObj) { //will return number of people online
 }
 
 
+//Get Properties in Object
+function getArrayOfUsers(obj) {
+  // Only change code below this line
+  const a = []
+  for (let x in obj){
+    a.push(x)
+  }
+  return a
+  // Only change code above this line
+}
+
