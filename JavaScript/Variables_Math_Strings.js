@@ -41,3 +41,16 @@ const Len = MyName.length; //with return number of characters taken (includes sp
 const FirstLetter = MyName[0]; //everything starts with zero, and you get get index of strings
 const LastLetter = MyName[Len-1]; //length does not include zero so you need to subtract 1
 //CANNOT CHANGE INDIVIDUAL LETTERS WITH BRACKET NOTATION
+
+//STRING FUNCTIONS
+
+const arrMyName = MyName.split("") //will return ['E','t','h','a','n']
+//Split will make string into array and split at set arguement
+//EX: MyName.split("a") //will return ['Eth', 'n']
+
+const partialName = MyName.substring(0,3) //will return 'Eth'
+//subtring two params are start and end (end is not inclusive)
+
+
+
+

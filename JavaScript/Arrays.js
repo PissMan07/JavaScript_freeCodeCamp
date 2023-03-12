@@ -37,3 +37,9 @@ function quickCheck(arr, elem) { //will check if element is in list
     return arr.indexOf(elem) >= 0? true:false //return true if found and false if not, indexes cant be negative
 }
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+//reverse
+const reverseD = [...D].reverse() //will reverse array [6,5,4,3,2,1]
+
+//Join
+const joinReverseD = [...reverseD].join() //will join all elements [654321]
