@@ -79,4 +79,42 @@ function confirmEnding(str, target) {
 confirmEnding("Bastian", "an");
 
 
-//
+// Find First Element that matches condition
+function findElement(arr, func) {
+  for (let i = 0;i<arr.length;i++){
+    if (func(arr[i])){
+      return arr[i]
+    }
+  };
+  //Method 2: return arr.find(func);
+}
+
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
+
+
+//Check if it is a boolean value
+function booWho(bool) {
+  return typeof bool == 'boolean';
+}
+
+
+//make first letter of every word only cap
+function titleCase(str) {
+  const a = str.split(" ")
+  for (let i = 0;i<a.length;i++){
+    a[i] = a[i][0].toUpperCase()+a[i].substring(1,a[i].length).toLowerCase()
+  }
+  return a.join(" ")
+}
+titleCase("I'm a little tea pot"); //will return 'I'm A Little Tea Pot'
+
+
+//Insert Values of an array into another array
+function frankenSplice(arr1, arr2, n) {
+  const a = [...arr2] //copy values of arr2 into local arr
+  a.splice(n,0,...arr1) //use splice to insert arr1 into local arr at specified index,
+  return a; //must use ...arr1 or else it will return entire arr rather than values inside array
+}
+
+
+// 
