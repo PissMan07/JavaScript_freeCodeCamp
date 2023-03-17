@@ -87,6 +87,7 @@ function findElement(arr, func) {
     }
   };
   //Method 2: return arr.find(func);
+  
 }
 
 console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
@@ -117,4 +118,20 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 
-// 
+// spliting an array into groups
+function chunkArrayInGroups(arr, size) {
+  const a = []
+  let l = []
+  for (let i = 0; i<arr.length;i++){
+    l.push(arr[i])
+    if (l.length >= size||i==arr.length-1){
+      a.push(l)
+      l = []
+    }
+  }
+  console.log(a)
+  return a;
+}
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4); //split into groups of four
+//[[0,1,2,3],[4,5]]

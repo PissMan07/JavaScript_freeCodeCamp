@@ -23,6 +23,11 @@ const d1Regex = /[aeiou]/gi; // Find all vowels (single characters)
 const e1Regex = /he/gi; // will return all words that begin with 'he'
 const result = a1.match(d1Regex); // return vowels [e,o,o,e,o,e,a]
 
+//Brackets will return true if one condition meets
+// regex hello; test string 'hey'
+// /[hello]/i will return true at lwast one of the values is found in [hello], which is h and e
+// /[^hello]/i will return true because atlest one of the values is not found [hello], which is y
+
 const bigStr = "big";
 const bagStr = "bag";
 const bugStr = "bug";
