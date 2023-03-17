@@ -43,3 +43,14 @@ const reverseD = [...D].reverse() //will reverse array [6,5,4,3,2,1]
 
 //Join
 const joinReverseD = [...reverseD].join() //will join all elements [654321]
+
+//Sort
+const s1 = ['b', 'd', 'a', 'c']
+const s2 = [5, 3, 20, 3]
+
+s1.sort() //will sort by asending alphebetical order
+s2.sort((a,b)=>a-b)
+//If solution is positive then it will go first a
+//If solution is 0 then it will remain
+//If solution is negative then it will go first b
+//Sort will run through every combination
