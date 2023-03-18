@@ -25,6 +25,8 @@ C.splice(0,1) //will remove index zero
 C.splice(0,3) //will return [1,2,3]
 //C will equal [1,2,3] at the end of everything
 
+
+
 //... copy everything into array
 const C1 = [...C] //will equal [1,2,3]
 const C2 = [...C,4,5,6] //will equal [1,2,3,4,5,6]
