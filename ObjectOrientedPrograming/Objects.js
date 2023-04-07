@@ -144,3 +144,49 @@ let glideMixin = function(obj){ //this is a function that takes an obj
 }
 glideMixin(bird) //insert glide function
 glideMixin(boat) //insert glide function
+
+//Private Properties
+//Public: can be changed outside of scope
+function Birdzzz1() {
+  this.weight = 15;
+}
+//Private: cannot be changeed outside of scope
+function Birdzzz2() {
+  let weight = 15;
+  this.getWeight = function(){
+    return weight;
+  };
+}
+
+let duck = new Bird();
+console.log(duck.getWeight())
+
+//A function without a name that will play immedietly
+//With Name
+function makeNest() {
+  console.log("A cozy nest is ready");
+}
+
+makeNest();
+
+//Without Name
+(function(){
+  console.log("A cozy nest is ready");
+})();
+
+//making a module for mixins: do this to make a it easier 
+let funModule = (function(){ //function module; will instantly occur
+  return{ //returns object
+    isCuteMixin(obj){ //function 1 of obj; mixin
+      obj.isCute = function() { //will give obj is cute function
+      return true;
+    };
+    },
+    
+    singMixin(obj){ //function 2 of obj; mixin
+      obj.sing = function() { //will give sing function 
+      console.log("Singing to an awesome tune");
+      };
+    }
+  }
+})();
