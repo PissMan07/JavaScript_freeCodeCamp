@@ -15,21 +15,36 @@ const C = [1,2,3];
 C.push([4,"Gays"]); //will add parameter at end of the array (aka [4, "gays"])
 C.pop(); // will remove last item of array (aka [4, "gays"])
 C.shift(); // will remove first item of array (aka 1)
-C.unshift(1); //will parameter to front of array (aka 1)
+C.unshift(1); //will push parameter to front of array (aka 1)
 
 //splice( index , how_many_values_to_delete , values_to_insert...)
 C.splice(3,0,4); //will add 4 to the third index
 C.splice(0,1) //will remove index zero
 
 //slice(start index,end index+1): extracts/copies, end index is not inclusive
-C.splice(0,3) //will return [1,2,3]
+C.slice(0,3) //will return [1,2,3]
 //C will equal [1,2,3] at the end of everything
 
-
-
+//Map(callback): Map will not change original array 
+const array1 = [1, 4, 9, 16];
+const map1 = array1.map(x => x * 2);// Expected output: Array [2, 8, 18, 32]
+ 
+//Reformating OBJS with MAP
+//Method 1
+const ratings = watchList.map((x)=>({
+    title: x["Title"],
+    rating: x["imdbRating"]
+  })
+)
+//Method 2
+const ratings1 = watchList.map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+//get rating and title from watchlist obj through variable, then make function
 //... copy everything into array
 const C1 = [...C] //will equal [1,2,3]
 const C2 = [...C,4,5,6] //will equal [1,2,3,4,5,6]
+
+//Filter(callback): if fuction is true then include
+const filteredList = ratings1.filter((x)=>(x['rating']>=8)) 
 
 //Index Of
 const D =[1,2,3,4,5,6]
