@@ -24,3 +24,28 @@ function sumAll2(arr) {
 }
 sumAll1([1, 4]); //will return 10
 
+
+//Differences in two arrays
+//Double For Loop Solution
+function diffArray(arr1, arr2) {
+  const newArr = [];
+  for (let i = 0; i < arr1.length;i++){
+    if (arr2.indexOf(arr1[i])<0){
+      newArr.push(arr1[i])
+    }
+  }
+  for (let i = 0; i < arr2.length;i++){
+    if (arr1.indexOf(arr2[i])<0){
+      newArr.push(arr2[i])
+    }
+  }
+  return newArr;
+}
+//Declarative Solution
+function diffArray(arr1, arr2) {
+  return arr1
+    .concat(arr2)
+    .filter(item => !arr1.includes(item) || !arr2.includes(item));
+}
+
+

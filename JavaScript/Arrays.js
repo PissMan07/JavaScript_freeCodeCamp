@@ -51,7 +51,7 @@ const D =[1,2,3,4,5,6]
 D.indexOf(5) // will return the index of value 5 (4)
 
 function quickCheck(arr, elem) { //will check if element is in list
-    return arr.indexOf(elem) >= 0? true:false //return true if found and false if not, indexes cant be negative
+    return arr.indexOf(elem) >= 0? true:false //return true if found and false if not, will be negative if not fpund
 }
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
